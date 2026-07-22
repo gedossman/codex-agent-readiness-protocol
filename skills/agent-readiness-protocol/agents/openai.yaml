@@ -1,0 +1,4 @@
+interface:
+  display_name: "Agent Readiness Protocol"
+  short_description: "Define enterprise requirements for agent rollout"
+  default_prompt: "Use $agent-readiness-protocol to explain the enterprise rollout contract for this AI agent."

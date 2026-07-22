@@ -1,0 +1,25 @@
+name: crm-automation-agent
+version: 0.1.0
+description: Automates CRM data entry and follow-up scheduling
+
+requirements:
+  - what: Read/write access to CRM contacts and opportunities
+    ready: The agent creates a test contact and reads a test opportunity in staging
+    canonical: integration.crm.api
+
+  - what: Enterprise SSO for agent operators
+    ready: A test user signs in through enterprise SSO and sees only authorized data
+    canonical: auth.sso.saml
+
+  - what: Security review and approval for the agent integration
+    ready: Security review is complete and the integration is approved for production
+    canonical: process.security-review
+
+  - what: A data owner to map custom CRM fields
+    ready: The field mapping is reviewed and approved by both teams
+    canonical: stakeholder.data-owner
+
+optional:
+  - what: Webhook access for real-time CRM updates
+    ready: The agent receives a test event within five seconds of a CRM update
+    canonical: integration.webhook.outbound

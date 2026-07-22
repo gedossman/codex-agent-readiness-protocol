@@ -1,0 +1,4 @@
+interface:
+  display_name: "Preview Agent Rollout"
+  short_description: "Preview enterprise rollout blockers and timeline"
+  default_prompt: "Use $preview-agent-rollout to preview this agent's rollout at the target enterprise."

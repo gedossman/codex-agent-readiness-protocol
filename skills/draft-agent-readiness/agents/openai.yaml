@@ -1,0 +1,4 @@
+interface:
+  display_name: "Draft Agent Readiness"
+  short_description: "Draft enterprise requirements for an AI agent"
+  default_prompt: "Use $draft-agent-readiness to scan this agent project and draft readiness.yaml for enterprise rollout."
